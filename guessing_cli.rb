@@ -10,11 +10,11 @@ computer_answer = rand(1..6)
   if answer == "exit"
     puts "Goodbye!"
     break
-    elsif answer.to_i == computer_answer
-      puts "You guessed the correct number!"
-    elsif answer.to_i != computer_answer
-        puts "The computer guessed #{computer_answer}."
-      else
+  elsif answer.to_i == computer_answer
+    puts "You guessed the correct number!"
+  elsif answer.to_i != computer_answer
+      puts "The computer guessed #{computer_answer}."
+  else
         puts "Invalid input!"
   end
 end
