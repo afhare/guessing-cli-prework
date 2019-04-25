@@ -8,14 +8,13 @@ answer = gets.chomp
 answer = answer.to_i 
 computer_answer = rand(1..6).
 
-case answer
-  when "exit"
+  if answer == "exit"
     puts "Goodbye"
     break
-  when answer == computer_answer
+  elsif answer == computer_answer
       puts "You guessed the correct number!"
-  when answer != computer_answer
+  else
         puts "The computer guessed #{computer_answer}."
-      end
+  end
 
 end
