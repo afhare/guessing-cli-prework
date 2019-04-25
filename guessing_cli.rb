@@ -5,14 +5,15 @@ puts "Guess a number between 1 and 6."
 
 answer = ""
 answer = gets.chomp
-answer = answer.to_i 
 computer_answer = rand(1..6)
 
   if answer == "exit"
     puts "Goodbye"
-    elsif answer == computer_answer
+    elsif answer.to_i == computer_answer
       puts "You guessed the correct number!"
-    else
+    elsif answer.to_i != computer_answer
         puts "The computer guessed #{computer_answer}."
+      else
+        puts "Invalid input!"
   end
 end
