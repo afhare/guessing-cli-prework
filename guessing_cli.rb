@@ -12,6 +12,7 @@ case answer
   when "exit"
     puts "Goodbye"
     when answer == computer_answer
+      puts : 
 while
 rand
 break
