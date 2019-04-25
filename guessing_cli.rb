@@ -12,7 +12,12 @@ while answer != "exit"
     puts "You guessed the correct number!"
   elsif answer.to_i != computer_answer
       puts "The computer guessed #{computer_answer}."
-  els
+  else
         puts "Invalid input!"
   end
+end
+
+if answer == "exit"
+  puts "Goodbye!"
+end
 end
