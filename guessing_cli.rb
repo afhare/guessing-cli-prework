@@ -11,12 +11,11 @@ computer_answer = rand(1..6).
 case answer
   when "exit"
     puts "Goodbye"
+    break
     when answer == computer_answer
       puts "You guessed the correct number!"
       when answer != computer_answer
         puts "The computer guessed #{computer_answer}."
-        
-while
-rand
-break
+      end
+
 end
