@@ -7,14 +7,12 @@ answer = ""
 answer = gets.chomp
 computer_answer = rand(1..6)
 
-  if answer == "exit"
-    puts "Goodbye!"
-    break
-  elsif answer.to_i == computer_answer
+while answer != "exit"
+  if answer.to_i == computer_answer
     puts "You guessed the correct number!"
   elsif answer.to_i != computer_answer
       puts "The computer guessed #{computer_answer}."
-  else
+  els
         puts "Invalid input!"
   end
 end
