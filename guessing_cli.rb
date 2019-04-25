@@ -12,7 +12,10 @@ case answer
   when "exit"
     puts "Goodbye"
     when answer == computer_answer
-      puts : 
+      puts "You guessed the correct number!"
+      when answer != computer_answer
+        puts "The computer guessed #{computer_answer}."
+        
 while
 rand
 break
