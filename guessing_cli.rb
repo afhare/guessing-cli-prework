@@ -12,7 +12,7 @@ def run_guessing_game
     end
 
   while answer != "exit"
-    elsif answer.to_i == computer_answer
+    if answer.to_i == computer_answer
       puts "You guessed the correct number!"
     elsif answer.to_i != computer_answer
         puts "The computer guessed #{computer_answer}."
