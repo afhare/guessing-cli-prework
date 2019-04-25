@@ -12,9 +12,9 @@ case answer
   when "exit"
     puts "Goodbye"
     break
-    when answer == computer_answer
+  when answer == computer_answer
       puts "You guessed the correct number!"
-      when answer != computer_answer
+  when answer != computer_answer
         puts "The computer guessed #{computer_answer}."
       end
 
