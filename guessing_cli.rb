@@ -8,7 +8,8 @@ answer = gets.chomp
 computer_answer = rand(1..6)
 
   if answer == "exit"
-    puts "Goodbye"
+    puts "Goodbye!"
+    break
     elsif answer.to_i == computer_answer
       puts "You guessed the correct number!"
     elsif answer.to_i != computer_answer
