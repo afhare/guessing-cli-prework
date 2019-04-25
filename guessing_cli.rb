@@ -10,11 +10,10 @@ computer_answer = rand(1..6).
 
   if answer == "exit"
     puts "Goodbye"
-  elsif answer == computer_answer
+    elsif answer == computer_answer
       puts "You guessed the correct number!"
-  else
+    else
         puts "The computer guessed #{computer_answer}."
-        break
   end
 
 end
